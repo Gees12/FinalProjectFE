@@ -163,7 +163,7 @@ const FeatureSection = () => {
               ) : (
                 <>
                   <Plus size={24} className="text-pink-500" />
-                  Add New Genre
+                  Add New Genre / Your Genre
                 </>
               )}
             </h3>

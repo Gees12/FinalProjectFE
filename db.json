@@ -51,6 +51,18 @@
       "name": "Documentary",
       "description": "Real stories, real people, and fascinating insights into our world",
       "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&h=200&fit=crop"
+    },
+    {
+      "id": "7",
+      "name": "Romance",
+      "description": "Heartwarming love stories and emotional connections",
+      "image": "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=200&h=200&fit=crop"
+    },
+    {
+      "id": "8",
+      "name": "Animation",
+      "description": "Creative animated features for all ages and tastes",
+      "image": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=200&h=200&fit=crop"
     }
   ],
   "subscriptionBenefits": [
