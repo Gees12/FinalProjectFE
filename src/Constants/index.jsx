@@ -27,7 +27,9 @@ export const testimonials = [
     user: "John Doe",
     company: "Stellar Solutions",
     image: user1,
+
     text: "VisualPlay has completely transformed the way I watch movies. The streaming quality is crystal clear, and the selection is impressive. I can enjoy my favorite films anytime without interruptions.",
+
   },
   {
     user: "Jane Smith",
@@ -40,24 +42,29 @@ export const testimonials = [
     company: "Quantum Innovations",
     image: user3,
     text: "I'm really impressed with VisualPlay’s performance. The streaming is fast, buffer-free, and the interface is very user-friendly. It has quickly become my go-to streaming app.",
+
   },
   {
     user: "Ronee Brown",
     company: "Fusion Dynamics",
     image: user4,
+
     text: "VisualPlay makes watching movies even more enjoyable. The recommendation feature is spot-on and always helps me discover films that match my taste. Highly recommended!",
+
   },
   {
     user: "Michael Wilson",
     company: "Visionary Creations",
     image: user5,
     text: "The video quality VisualPlay provides is outstanding. Even with an unstable connection, movies still play smoothly. This app truly delivers a premium streaming experience.",
+
   },
   {
     user: "Emily Davis",
     company: "Synergy Systems",
     image: user6,
     text: "I absolutely love VisualPlay! It offers many exclusive titles that aren’t available on other platforms. The interface is intuitive and makes exploring the movie catalog enjoyable.",
+
   },
 ];
 

@@ -99,7 +99,7 @@ function App() {
         <section id="pricing-section" className="mt-20">
           <Pricing openPayment={handleOpenPayment} />
         </section>
-        
+
         <section id="testimonials-section" className="mt-20">
           <Testimonials />
         </section>
@@ -123,7 +123,11 @@ function App() {
 
       {showPaymentModal && (
         <ModalShell onClose={closePaymentModal}>
-          <PaymentForm plan={selectedPlan} onClose={closePaymentModal} onSuccess={handlePaymentSuccess} />
+          <PaymentForm
+            plan={selectedPlan}
+            onClose={closePaymentModal}
+            onSuccess={handlePaymentSuccess}
+          />
         </ModalShell>
       )}
     </div>
