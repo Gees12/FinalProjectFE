@@ -27,37 +27,44 @@ export const testimonials = [
     user: "John Doe",
     company: "Stellar Solutions",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+
+    text: "VisualPlay has completely transformed the way I watch movies. The streaming quality is crystal clear, and the selection is impressive. I can enjoy my favorite films anytime without interruptions.",
+
   },
   {
     user: "Jane Smith",
     company: "Blue Horizon Technologies",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: "VisualPlay is incredibly convenient and easy to use. The movie library is diverse, offering everything from the latest releases to timeless classics. The viewing experience is truly satisfying!",
   },
   {
     user: "David Johnson",
     company: "Quantum Innovations",
     image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    text: "I'm really impressed with VisualPlay’s performance. The streaming is fast, buffer-free, and the interface is very user-friendly. It has quickly become my go-to streaming app.",
+
   },
   {
     user: "Ronee Brown",
     company: "Fusion Dynamics",
     image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+
+    text: "VisualPlay makes watching movies even more enjoyable. The recommendation feature is spot-on and always helps me discover films that match my taste. Highly recommended!",
+
   },
   {
     user: "Michael Wilson",
     company: "Visionary Creations",
     image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    text: "The video quality VisualPlay provides is outstanding. Even with an unstable connection, movies still play smoothly. This app truly delivers a premium streaming experience.",
+
   },
   {
     user: "Emily Davis",
     company: "Synergy Systems",
     image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    text: "I absolutely love VisualPlay! It offers many exclusive titles that aren’t available on other platforms. The interface is intuitive and makes exploring the movie catalog enjoyable.",
+
   },
 ];
 
