@@ -135,30 +135,30 @@ export const pricingOptions = [
     title: "Free",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Stream on 1 screen at a time",
+      "Standard Definition (SD) Quality",
+      "Access to the Standard Library",
+      "Ad-Supported Streaming"
     ],
   },
   {
     title: "Pro",
     price: "$10",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Stream on up to 3 screens at a time",
+      "High Definition (HD) Quality",
+      "Access to the Standard Library + Originals",
+      "Ad-Free Streaming",
     ],
   },
   {
-    title: "Enterprise",
+    title: "VIP",
     price: "$200",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Stream on up to 5 screens at a time",
+      "Ultra HD (4K) & HDR Quality",
+      "Access to the Full Library + New Releases",
+      "Ad-Free Streaming + Offline Downloads",
     ],
   },
 ];
