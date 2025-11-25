@@ -20,7 +20,7 @@ function Signup() {
     const user = { email, password };
 
     try {
-      const response = await fetch("http://localhost:3000/users", {
+      const response = await fetch("http://localhost:3002/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
