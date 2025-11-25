@@ -40,7 +40,7 @@ const FeatureSection = () => {
 
   const fetchGenres = async () => {
     try {
-      const response = await fetch("http://localhost:3000/genres");
+      const response = await fetch("http://localhost:3002/genres");
       if (response.ok) {
         const data = await response.json();
         setGenres(data);
@@ -57,7 +57,7 @@ const FeatureSection = () => {
     if (!newGenre.name || !newGenre.description || !newGenre.image) return;
 
     try {
-      const response = await fetch("http://localhost:3000/genres", {
+      const response = await fetch("http://localhost:3002/genres", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const FeatureSection = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/genres/${editingGenre.id}`,
+        `http://localhost:3002/genres/${editingGenre.id}`,
         {
           method: "PUT",
           headers: {
@@ -117,7 +117,7 @@ const FeatureSection = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/genres/${id}`, {
+      const response = await fetch(`http://localhost:3002/genres/${id}`, {
         method: "DELETE",
       });
 

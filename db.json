@@ -13,6 +13,13 @@
       "email": "iman@gmail.com",
       "password": "12345",
       "createdAt": "2025-11-24T13:43:33.132Z"
+    },
+    {
+      "id": "e783",
+      "fullName": "imel",
+      "email": "imel@gmail.com",
+      "password": "123",
+      "createdAt": "2025-11-25T01:32:24.298Z"
     }
   ],
   "genres": [
@@ -63,14 +70,15 @@
       "name": "Animation",
       "description": "Creative animated features for all ages and tastes",
       "image": "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=200&h=200&fit=crop"
+    },
+    {
+      "id": 1764033551902,
+      "name": "afasddf",
+      "description": "asdf",
+      "image": "asdf"
     }
   ],
   "subscriptionBenefits": [
-    {
-      "id": "1",
-      "title": "Watch on Any Device",
-      "description": "Stream on your phone, tablet, laptop, and TV without limits"
-    },
     {
       "id": "2",
       "title": "Download & Go",
@@ -95,11 +103,6 @@
       "id": "6",
       "title": "Cancel Anytime",
       "description": "No commitments, cancel your subscription whenever you want"
-    },
-    {
-      "id": "1763909200222",
-      "title": "Example",
-      "description": "Hanya contoh"
     }
   ]
 }

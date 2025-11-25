@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../../Constants";
+import Logo from "../../Assets/Logo.png";
 
 const Navbar = ({ openSignup, openSignin, isLoggedIn, subscriptionStatus }) => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -10,18 +11,29 @@ const Navbar = ({ openSignup, openSignin, isLoggedIn, subscriptionStatus }) => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
 
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      setMobileDrawerOpen(false);
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <span className="text-xl tracking-tight">VirtualR</span>
+            <img src={Logo} alt="Logo" className="h-8 w-8 mr-3" />
+            <span className="text-xl tracking-tight">VisualPlay</span>
           </div>
 
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <button onClick={() => handleScroll(item.href.replace("#", ""))}>
+                  {item.label}
+                </button>
               </li>
             ))}
           </ul>
@@ -29,15 +41,11 @@ const Navbar = ({ openSignup, openSignin, isLoggedIn, subscriptionStatus }) => {
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             {isLoggedIn ? (
               <span className="py-2 px-3 border border-emerald-500/50 text-emerald-200 rounded-md">
-                You are logged in
-                {subscriptionStatus ? ` (${subscriptionStatus})` : ""}
+                You are logged in {subscriptionStatus ? `(${subscriptionStatus})` : ""}
               </span>
             ) : (
               <>
-                <button
-                  onClick={openSignin}
-                  className="py-2 px-3 border rounded-md"
-                >
+                <button onClick={openSignin} className="py-2 px-3 border rounded-md">
                   Sign In
                 </button>
                 <button
@@ -51,9 +59,7 @@ const Navbar = ({ openSignup, openSignin, isLoggedIn, subscriptionStatus }) => {
           </div>
 
           <div className="lg:hidden md:flex flex-col justify-end">
-            <button onClick={toggleNavbar}>
-              {mobileDrawerOpen ? <X /> : <Menu />}
-            </button>
+            <button onClick={toggleNavbar}>{mobileDrawerOpen ? <X /> : <Menu />}</button>
           </div>
         </div>
 
@@ -62,22 +68,21 @@ const Navbar = ({ openSignup, openSignin, isLoggedIn, subscriptionStatus }) => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <button onClick={() => handleScroll(item.href.replace("#", ""))}>
+                    {item.label}
+                  </button>
                 </li>
               ))}
             </ul>
+
             <div className="flex space-x-6">
               {isLoggedIn ? (
                 <span className="py-2 px-3 border border-emerald-500/50 text-emerald-200 rounded-md">
-                  You are logged in
-                  {subscriptionStatus ? ` (${subscriptionStatus})` : ""}
+                  You are logged in {subscriptionStatus ? `(${subscriptionStatus})` : ""}
                 </span>
               ) : (
                 <>
-                  <button
-                    onClick={openSignin}
-                    className="py-2 px-3 border rounded-md"
-                  >
+                  <button onClick={openSignin} className="py-2 px-3 border rounded-md">
                     Sign In
                   </button>
                   <button

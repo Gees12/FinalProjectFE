@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const API_URL = "http://localhost:3000/users";
+const API_URL = "http://localhost:3002/users";
 
 const initialFormState = {
   fullName: "",

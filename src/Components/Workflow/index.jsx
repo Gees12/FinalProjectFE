@@ -43,7 +43,7 @@ const Workflow = () => {
 
   const fetchBenefits = async () => {
     try {
-      const response = await fetch('http://localhost:3001/subscriptionBenefits');
+      const response = await fetch('http://localhost:3002/subscriptionBenefits');
       if (response.ok) {
         const data = await response.json();
         setBenefits(data);
@@ -60,7 +60,7 @@ const Workflow = () => {
     if (!newBenefit.title || !newBenefit.description) return;
     
     try {
-      const response = await fetch('http://localhost:3001/subscriptionBenefits', {
+      const response = await fetch('http://localhost:3002/subscriptionBenefits', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ const Workflow = () => {
     if (!editingBenefit) return;
     
     try {
-      const response = await fetch(`http://localhost:3001/subscriptionBenefits/${editingBenefit.id}`, {
+      const response = await fetch(`http://localhost:3002/subscriptionBenefits/${editingBenefit.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ const Workflow = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3001/subscriptionBenefits/${id}`, {
+      const response = await fetch(`http://localhost:3002/subscriptionBenefits/${id}`, {
         method: 'DELETE',
       });
       
